@@ -26,9 +26,9 @@ export const CalendarDayCell = ({ day, onClick }: CalendarDayCellProps) => {
   return (
     <div
       className={cn(
-        "min-h-[120px] p-2 border-r border-b border-border cursor-pointer hover:bg-accent/50 transition-colors",
+        "min-h-[120px] p-2 border-r border-b border-border cursor-pointer hover:bg-muted/30 transition-colors",
         "flex flex-col gap-1",
-        !day.isCurrentMonth && "bg-muted/30 text-muted-foreground",
+        !day.isCurrentMonth && "bg-muted/50 text-muted-foreground",
         day.isToday && "bg-accent",
         "last-in-row:border-r-0"
       )}
